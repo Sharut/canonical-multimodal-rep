@@ -2,7 +2,7 @@
 
 <h1>Canonicalizing Multimodal Contrastive Representation Learning</h1>
 
-#### [Project Page](https://canonical-multimodal.github.io/) | [Paper](https://arxiv.org/abs/2507.08980) | [Bibtex](#citation)
+#### [Project Page](https://canonical-multimodal.github.io/) | [Paper](https://arxiv.org/abs/2602.17584) | [Bibtex](#citation)
 
 <div>
     <a href="https://www.mit.edu/~sharut" target="_blank">Sharut Gupta</a><sup>†,*</sup> | 
@@ -21,7 +21,7 @@
 <br>
 
 
-[![arXiv](https://img.shields.io/badge/arXiv-2507.08980-b31b1b.svg)](https://arxiv.org/abs/2507.08980)
+[![arXiv](https://img.shields.io/badge/arXiv-2602.17584-b31b1b.svg)](https://arxiv.org/abs/2602.17584)
 
 ---
 
@@ -29,7 +29,7 @@
 <div align="left"> 
 
 ## Abstract
-As models and data scale, independently trained networks often induce analogous notions of similarity. But, matching similarities is weaker than establishing an explicit correspondence between the representation spaces, especially for multimodal models, where consistency must hold not only within each modality, but also for the learned image–text coupling. We therefore ask: given two \emph{independently} trained multimodal contrastive models (with encoders $(f, g)$ and $(\tilde f,\tilde g)$)---trained on different distributions and with different architectures---does a systematic geometric relationship exist between their embedding spaces? If so, what form does it take, and does it hold uniformly across modalities? In this work, we show that across model families such as CLIP, SigLIP, and FLAVA, this geometric relationship is well approximated by an orthogonal map, i.e., there exists an orthogonal map $Q$ where $Q^\top Q = I$ such that, up to a global mean shift, $\tilde f(x)\approx Q f(x)$ for paired images $x$. Strikingly, the \emph{same} $Q$ simultaneously aligns the text encoders i.e., $\tilde g(y)\approx Q g(y)$ for texts $y$. Theoretically, we prove that if the multimodal kernel agrees across models on a small anchor set i.e. $\langle f(x), g(y)\rangle \approx \langle \tilde f(x), \tilde g(y)\rangle$, then the two models must be related by a \emph{single orthogonal map} $Q$ and the same $Q$ maps images and text across models. More broadly, this finding enables backward-compatible model upgrades, avoiding costly re-embedding, and has implications for the privacy of learned representations.
+As models and data scale, independently trained networks often induce analogous notions of similarity. But, matching similarities is weaker than establishing an explicit correspondence between the representation spaces, especially for multimodal models, where consistency must hold not only within each modality, but also for the learned image–text coupling. We therefore ask: given two \emph{independently} trained multimodal contrastive models (with encoders $(f, g)$ and $(\tilde{f},\tilde{g})$)---trained on different distributions and with different architectures---does a systematic geometric relationship exist between their embedding spaces? If so, what form does it take, and does it hold uniformly across modalities? In this work, we show that across model families such as CLIP, SigLIP, and FLAVA, this geometric relationship is well approximated by an orthogonal map, i.e., there exists an orthogonal map $Q$ where $Q^\top Q = I$ such that, up to a global mean shift, $\tilde{f}(x)\approx Q f(x)$ for paired images $x$. Strikingly, the \emph{same} $Q$ simultaneously aligns the text encoders i.e., $\tilde{g}(y)\approx Q g(y)$ for texts $y$. Theoretically, we prove that if the multimodal kernel agrees across models on a small anchor set i.e. $\langle f(x), g(y)\rangle \approx \langle \tilde{f}(x), \tilde{g}(y)\rangle$, then the two models must be related by a \emph{single orthogonal map} $Q$ and the same $Q$ maps images and text across models. More broadly, this finding enables backward-compatible model upgrades, avoiding costly re-embedding, and has implications for the privacy of learned representations.
 
 ![img](./assets/teaser.jpg)
 
@@ -135,7 +135,7 @@ If you find this work useful in your research, please cite:
     title={Canonicalizing Multimodal Contrastive Representation Learning},
     author={Gupta, Sharut and Kansal, Sanyam and Jegelka, Stefanie and 
         Isola, Phillip and Garg, Vikas},
-    journal={arXiv preprint arXiv:2602.02366},
+    journal={arXiv preprint arXiv:2602.17584},
     year={2026}
 }
 
