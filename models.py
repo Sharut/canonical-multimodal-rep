@@ -104,7 +104,7 @@ def compute_standard_procrustes(x_src, x_tgt, device):
     X, Y = x_src.to(device), x_tgt.to(device)
     mu_x, mu_y = X.mean(0, keepdim=True), Y.mean(0, keepdim=True)
     M = (X - mu_x).T @ (Y - mu_y)
-    U, _, Vh = torch.linalg.svd(M)
+    U, _, Vh = torch.linalg.svd(M, full_matrices=False)
     R = U @ Vh
     return R, mu_x, mu_y
 
